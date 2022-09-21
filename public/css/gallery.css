@@ -1,0 +1,68 @@
+/* #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+} */
+
+/* .modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+} */
+
+/* #caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+} */
+
+/* .modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+} */
+
+/* @keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+} */
+
+.image {
+  margin-bottom: 25px;
+}
+
+.close {
+  position: absolute;
+  right: 200px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.close {
+  right: 15px;
+}

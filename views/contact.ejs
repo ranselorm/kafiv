@@ -1,0 +1,86 @@
+<% layout('layouts/boilerplate') %>
+<div class="mt-5"></div>
+
+<style>
+  html,
+  body {
+    background: rgb(94, 93, 121);
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(3, 47, 57, 1) 0%
+    );
+    height: 100%;
+    margin: 0;
+  }
+</style>
+
+<div class="registration-form container">
+  <div class="row">
+    <div class="col-6 register">
+      <h1 class="text-center register-h1">Signup</h1>
+      <form action="/signup" method="POST" novalidate class="validated-form">
+        <div class="col">
+          <label class="form-label fs-5" for="name">First Name*</label>
+          <input
+            class="form-control"
+            type="text"
+            id="firstname"
+            name="firstname"
+            required
+          />
+        </div>
+        <div class="col">
+          <label class="form-label fs-5" for="name">Last Name*</label>
+          <input
+            class="form-control"
+            type="text"
+            id="lastname"
+            name="lastname"
+            required
+          />
+        </div>
+        <div>
+          <label class="form-label fs-5" for="name">Email*</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label fs-5" for="occupation">Occupation*</label>
+          <input
+            class="form-control"
+            type="text"
+            id="occupation"
+            name="occupation"
+            required
+          />
+        </div>
+        <!-- <div class="mb-3">
+        <label class="form-label fs-5" for="date">Date Of Birth</label>
+        <input class="form-control" type="date" id="date" name="date" />
+      </div> -->
+        <div class="mb-3">
+          <label class="form-label fs-5" for="contact">Contact*</label>
+          <input
+            class="form-control"
+            type="tel"
+            id="contact"
+            name="contact"
+            required
+          />
+        </div>
+        <br />
+
+        <div class="wrap-btn">
+          <button class="btn fs-5 button">CLICK TO REGISTER</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<hr class="hr" />
